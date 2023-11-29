@@ -40,7 +40,7 @@ export const Navbar = () => {
           <div className="logo">
             <img src={CbusGoodwill} alt="Goodwill Logo" />
           </div>
-          <li>
+          {/* <li>
             <Link to="https://www.goodwillcolumbus.org/mission/">Mission</Link>
           </li>
           <li
@@ -90,7 +90,7 @@ export const Navbar = () => {
                 </Link>
               </div>
             )}
-          </li>
+          </li> */}
           <li>
             <a
               onClick={() => {

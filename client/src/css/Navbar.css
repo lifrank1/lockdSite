@@ -105,6 +105,7 @@ li a.circular-button {
     font-weight: bold;
     color: rgb(29, 70, 170, 255);
     font-size: 16px;
+    margin-right: 30px;
 }
 
 /* Adjust the "Find a Job" link to use the circular-button class */
