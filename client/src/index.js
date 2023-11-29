@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import App from "./App";
+import Team from "./pages/Team";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/Team" element={<Team />} />
+        {/* <Route exact path="/ChatPage" element={<AppChat />} />
+        <Route exact path="/TrainingPage" element={<TrainingPage />} />
+        <Route exact path="/Your-Progress" element={<SignIn />} /> */}
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

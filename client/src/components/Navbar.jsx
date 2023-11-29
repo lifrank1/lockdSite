@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CbusGoodwill from "../data/CbusGoodwill.png";
-import "./NavBar.css"; // Import the CSS file
+import CbusGoodwill from "../data/LockdLogo.png";
+import "../css/Navbar.css"; // Import the CSS file
 import {
   Link,
   Route,
@@ -28,7 +28,8 @@ export const Navbar = () => {
     setIsDonateDropdownOpen(!isDonateDropdownOpen);
   };
 
-  const toggleProgressDropdown = () => { // New function
+  const toggleProgressDropdown = () => {
+    // New function
     setIsProgressDropdownOpen(!isProgressDropdownOpen);
   };
 
@@ -90,32 +91,6 @@ export const Navbar = () => {
               </div>
             )}
           </li>
-          <li
-            onMouseEnter={toggleDonateDropdown}
-            onMouseLeave={toggleDonateDropdown}
-          >
-            <span>Donate</span>
-            {isDonateDropdownOpen && (
-              <div className="dropdown">
-                <Link to="https://www.goodwillcolumbus.org/donate/clothing-and-goods/">
-                  Clothing & Goods
-                </Link>
-                <Link to="https://www.goodwillcolumbus.org/donate/make-a-gift/">
-                  Make a Gift
-                </Link>
-                <Link to="https://www.goodwillcolumbus.org/donate/epl/">
-                  Extraordinary People Luncheon
-                </Link>
-                <Link to="https://www.goodwillcolumbus.org/donate/auto-auction/">
-                  Donate a Vehicle
-                </Link>
-                <Link to="https://www.goodwillcolumbus.org/donate/goodwill-at-your-door/">
-                  Goodwill At Your Door
-                </Link>
-                <Link to="">Volunteer</Link>
-              </div>
-            )}
-          </li>
           <li>
             <a
               onClick={() => {
@@ -124,8 +99,8 @@ export const Navbar = () => {
             >
               Feedback
             </a>
-        </li>
-        <li>
+          </li>
+          <li>
             <a
               onClick={() => {
                 navigate("/ChatPage");
@@ -133,8 +108,8 @@ export const Navbar = () => {
             >
               Chat
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <span
               onMouseEnter={toggleProgressDropdown}
               onMouseLeave={toggleProgressDropdown}
@@ -142,18 +117,18 @@ export const Navbar = () => {
               Training
               {isProgressDropdownOpen && (
                 <div className="dropdown">
-                 <a
-              onClick={() => {
-                navigate("/Your-Progress" );
-              }}
-            >
-              Your Progress
-            </a>
+                  <a
+                    onClick={() => {
+                      navigate("/Your-Progress");
+                    }}
+                  >
+                    Your Progress
+                  </a>
                 </div>
               )}
             </span>
-            </li>
-            <li>
+          </li>
+          <li>
             <Link
               to="https://www.goodwillcolumbus.org/services/for-individuals/find-a-job/"
               className="circular-button"
