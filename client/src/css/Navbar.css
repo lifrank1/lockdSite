@@ -22,7 +22,8 @@ li:first-child {
 
 /* Add a background color to the logo */
 .logo {
-    background-color: rgb(29, 70, 170); /* Set the background color to the desired blue */
+    margin-left: 30px;
+    background-color: rgba(17,22,42,255); /* Set the background color to the desired blue */
     padding: 10px; /* Add padding for spacing */
 }
 

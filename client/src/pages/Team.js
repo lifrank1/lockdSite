@@ -4,7 +4,7 @@ export const Team = () => {
 
   return (
     <nav>
-      <p>hi</p>
+      <p>Meet the Team</p>
     </nav>
   );
 };
